@@ -1,0 +1,38 @@
+<link rel="stylesheet" href="index.css">
+<div id="container">
+
+    <div class="container-fluid">
+        <h1>
+            Random Quote Generator
+        </h1>
+        <h3>Made by Deepak S.</h3>
+    </div>
+
+    <div id="content" class="container-fluid">
+        <p id="contentParagraph">
+            "Hey there! I see you've come upon my random quote generator. To read random quotes, just click the "Show
+            Another Quote"
+            button below. If you like a particular quote, you can click the "Tweet This Quote!" button. Enjoy!"
+        </p>
+        <div id="whoSaid">
+            - Ameya Joshi
+        </div>
+    </div>
+
+    <div id="buttonsDiv">
+        <button id="showQuoteButton" onclick="showQuotesAndWhoSaid();">Show Another Quote</button>
+
+        <a class="twitter-share-button" id="tweetQuoteButton" href="https://twitter.com/intent/tweet?text="
+            data-size="large" target="_blank">
+            <button onclick="tweetCurrentQuote();">Tweet This Quote!</button>
+        </a>
+    </div>
+
+</div> <!-- End of container div -->
+
+<!-- This links to Google CDN jQuery library with a secure connection -->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js">
+</script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="index.js"></script>
